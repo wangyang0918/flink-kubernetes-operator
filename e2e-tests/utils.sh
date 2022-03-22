@@ -89,6 +89,10 @@ function debug_and_show_logs {
           fi
         done
     done
+
+    kubectl get serviceaccount flink-operator -o yaml
+    kubectl get clusterrole flink-operator -o yaml
+    kubectl get clusterrolebinding flink-operator-cluster-role-binding -o yaml
 }
 
 function start_minikube {
