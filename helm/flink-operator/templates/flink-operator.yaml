@@ -67,8 +67,6 @@ spec:
               value: -Dlog4j.configurationFile=/opt/flink-operator/conf/log4j2.properties
             - name: FLINK_OPERATOR_WATCH_NAMESPACES
               value: {{ join "," .Values.watchNamespaces  }}
-            - name: JAVA_OPERATOR_SDK_CHECK_CRD
-              value: "false"
           volumeMounts:
             - name: flink-operator-config-volume
               mountPath: /opt/flink-operator/conf
