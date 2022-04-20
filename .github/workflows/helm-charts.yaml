@@ -28,7 +28,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.4.0
         with:
           charts_dir: helm
-          charts_repo_url: https://downloads.apache.org/flink/
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_OWNER: "${{github.repository_owner}}"
