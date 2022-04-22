@@ -41,4 +41,14 @@ entries:
     urls:
     - https://github.com/wangyang0918/flink-kubernetes-operator/releases/download/flink-kubernetes-operator-1.0-SNAPSHOT/flink-kubernetes-operator-1.0-SNAPSHOT.tgz
     version: 1.0-SNAPSHOT
-generated: "2022-04-22T03:30:46.017405478Z"
+  - apiVersion: v2
+    appVersion: 1.0-SNAPSHOT
+    created: "2022-04-22T03:33:53.942163953Z"
+    description: A Helm chart for the Apache Flink Kubernetes Operator
+    digest: 2fd1faa5cd54f4f669085f7dfa93bde5eb0cb903094723f48c3d4848f85fb704
+    name: flink-kubernetes-operator
+    type: application
+    urls:
+    - https://github.com/wangyang0918/flink-kubernetes-operator/releases/download/flink-kubernetes-operator-1.0-SNAPSHOT/flink-kubernetes-operator-1.0-SNAPSHOT.tgz
+    version: 1.0-SNAPSHOT
+generated: "2022-04-22T03:33:53.942184654Z"
