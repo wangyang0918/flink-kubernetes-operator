@@ -55,11 +55,11 @@ done
 
 LICENSES="${DST}/licenses"
 [ -f "${LICENSES}" ] && rm -r "${LICENSES}"
-find "${TMP}" -name "licenses" -type d -exec cp -r -- "{}" "${DST}" \;
+find "${TMP}" -name "licenses" -type d -exec /bin/cp -r -- "{}" "${DST}" \;
 
 # Search the binary distribution directory and collect those license files that
 # not bundled in any jars.
 find "${SRC}" -name "LICENSE.*" -type f \
-! -path "${DST}/licenses/*" ! -path "${TMP}/licenses/*" -exec cp -- "{}" "${DST}/licenses" \;
+! -path "${DST}/licenses/*" ! -path "${TMP}/licenses/*" -exec /bin/cp -- "{}" "${DST}/licenses" \;
 
 rm -r "${TMP}"
